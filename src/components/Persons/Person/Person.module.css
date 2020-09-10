@@ -7,6 +7,20 @@
     text-align: center;
 }
 
+.btnClass{
+    background-color: paleturquoise;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btnClass:hover{
+    background-color: slateblue;
+}
+.odd{
+    border:1px solid palegreen;
+}
+.even{
+    border:2px solid rgb(245, 185, 185);
+}
 @media (min-width: 500px) {
     .Person{
         width: 450px;

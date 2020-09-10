@@ -34,8 +34,8 @@ class Main extends Component {
 
     return (
       <Layout>
-        {/* <Persons persons = {this.state.persons} clicked ={this.birthdayHandler}></Persons> */}
-        {this.state.persons.map((person, index) => {
+        <Persons persons = {this.state.persons} clicked ={this.birthdayHandler}></Persons>
+        {/* {this.state.persons.map((person, index) => {
           return (
             <div key={person.id} style={style}>
               <p>
@@ -46,7 +46,7 @@ class Main extends Component {
               </button>
             </div>
           )
-        })}
+        })} */}
       </Layout>
     )
   }
