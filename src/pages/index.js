@@ -11,8 +11,9 @@ const IndexPage = () => (
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
     </div>
     <Link to="/main/">Go to Main</Link> <br />
-    <Link to="/coffeeTypes/">Go to Coffee Types</Link><br />
-    <a href="/main/">{"<a> href link"}</a>
+    <Link to="/coffeeTypes/"> Go to Coffee Types</Link> <br/>
+    <Link to="/allCoffees/">Go to All Coffees</Link>
+    {/* <a href="/main">Go to Main</a> */}
   </Layout>
 )
 
