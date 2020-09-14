@@ -49,8 +49,11 @@ const CoffeeTypes = () => {
       {data.allContentfulCoffeeTypes.nodes.map(coffeetype => {
         return (
           <div key={coffeetype.id} style={style}>
-            <h2>{coffeetype.coffeeType}</h2>
-            <img src={coffeetype.coffeeTypeImg.fluid.src}></img><br/>
+            <Link to={`/${coffeetype.slug}`}>
+              <h2>{coffeetype.coffeeType}</h2>
+            </Link>
+            <img src={coffeetype.coffeeTypeImg.fluid.src}></img>
+            <br />
             {coffeetype.coffeeTypeOfferings.map(coffee => {
               return (
                 // <div className={classes.Coffee}>
@@ -64,7 +67,11 @@ const CoffeeTypes = () => {
                 //     <Link to={`/${coffee.slug}`}>More Info</Link>
                 //   </button>
                 // </div>
-                <CoffeeCard key={coffee.id} coffeeType={coffeetype.slug} coffee={coffee}></CoffeeCard>
+                <CoffeeCard
+                  key={coffee.id}
+                  coffeeType={coffeetype.slug}
+                  coffee={coffee}
+                ></CoffeeCard>
               )
             })}
           </div>
