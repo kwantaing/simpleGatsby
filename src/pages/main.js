@@ -35,18 +35,6 @@ class Main extends Component {
     return (
       <Layout>
         <Persons persons = {this.state.persons} clicked ={this.birthdayHandler}></Persons>
-        {/* {this.state.persons.map((person, index) => {
-          return (
-            <div key={person.id} style={style}>
-              <p>
-                I'm {person.name} and I am {person.age} years old.
-              </p>
-              <button onClick={() => this.birthdayHandler(index)}>
-                Birthday!
-              </button>
-            </div>
-          )
-        })} */}
       </Layout>
     )
   }

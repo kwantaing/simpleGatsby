@@ -1,6 +1,7 @@
 import React from "react"
 import Layout from "../components/Layout/layout"
 import CoffeeCard from "../components/Coffees/Coffee/CoffeeCard"
+import CoffeeDetail from "../components/Coffees/Coffee/CoffeeDetail"
 
 const DetailPage = props => {
   console.log(props.pageContext)
@@ -10,7 +11,8 @@ const DetailPage = props => {
   if (typeof coffeetype === "undefined") {
     return (
       <Layout>
-        <CoffeeCard coffee={coffee}></CoffeeCard>
+        {/* <CoffeeCard coffee={coffee}></CoffeeCard> */}
+        <CoffeeDetail coffee={coffee}></CoffeeDetail>
       </Layout>
     )
   } else {

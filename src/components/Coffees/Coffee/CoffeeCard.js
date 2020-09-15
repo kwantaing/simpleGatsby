@@ -12,7 +12,7 @@ const CoffeeCard = (props) => {
         ></img>
         <p>{coffee.coffeeDescription}</p>
         <button variant="contained">
-          <Link to={`/${props.coffeeType}/${coffee.slug}`}>More Info</Link>
+          <Link to={`/${coffee.coffeeType.slug}/${coffee.slug}`}>More Info</Link>
         </button>
       </div>
     )
